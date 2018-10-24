@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
@@ -21,11 +20,12 @@ class App extends Component {
 	render() {
 		return (
 			<div className="App">
-				<img src={logo} className="App-logo" alt="logo" />
 
+				<div class={'button'} onClick={this.test}>Change name of Child from App</div>
+
+				<h3>Children:</h3>
 				{this.state.name && <Child name={this.state.name} callback={this.changeChildName}/>}
-				<button onClick={this.test}>Change name of Child from App</button>
-
+				
 			</div>
 		);
 	}
@@ -62,7 +62,7 @@ class Child extends Component {
 				:
 				'no name'
 			}
-				<button onClick={this.changeMyName}>Change name of Child from Child</button>
+				<div class={'button'} onClick={this.changeMyName}>Change name of Child from Child</div>
 			</div>
 		);
 	}
