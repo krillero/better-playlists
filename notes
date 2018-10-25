@@ -1,0 +1,6 @@
+git deploy to ftp on commit:
+bitbucket pipelines with git-ftp
+video: https://www.youtube.com/watch?v=8HZhHtZebdw
+
+git - install git on webserver and send commits to the webfolder
+https://medium.com/@clsource/using-git-as-an-alternative-to-sftp-e557ccd4f62a
